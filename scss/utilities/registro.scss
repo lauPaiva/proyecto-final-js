@@ -1,0 +1,184 @@
+.container{
+    .headerCompartido{
+        .volver{
+            position: relative;
+            display: inline-block;
+            margin: 4rem 6rem;
+            a{
+                svg{
+                    width: 7.5rem;
+                    height: 7.5rem;
+                    color: white;
+                }     
+            }
+            &::after{
+                content: "Volver al inicio";
+                text-align: center;
+                position: absolute;
+                color: white;
+                font-size: 2.5rem;
+                left: -150%;
+                top: -150%;
+                transform: translate(50%, -50%);
+                transition: .35s;
+            }
+            &:hover{
+                animation: rebote 0.8s alternate 1 ease-out;
+                
+
+                @keyframes rebote{
+                    14%{
+                        transform: translateY(-40%);
+                    }
+                    28%{
+                        transform: translateY(0%);
+                    }
+                    42%{
+                        transform: translateY(-30%);
+                    }
+                    56%{
+                        transform: translateY(0%);
+                    }
+                    70%{
+                        transform: translateY(-20%);
+                    }
+                    84%{
+                        transform: translateY(0%);
+                    }
+                    98%{
+                        transform: translateY(-10%);
+                    }
+                    100%{
+                        transform: translateY(0%);
+                    }
+
+                }
+                &::after{
+                    top:110%;
+                    transition: 0.35s;
+                }
+            }
+        }
+    }
+    .mainCompartido{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .formCompartido{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 22%;
+            padding: 8rem 3rem;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 2px solid rgba(255, 255, 255, 0.18);
+            margin-bottom: 4rem;
+            
+            h1{
+                text-align: center;
+                padding-bottom: 2rem;
+                margin-bottom: 1rem;
+                box-shadow: 0px 1px 0.1px white;
+                font-size: 3.2rem;
+                font-family: 'Cinzel', serif;
+            }
+            input{
+                width: 100%;
+                padding: 1rem;
+                margin: 2% 0;
+                border-radius: 0.6rem;
+                border: none;
+                font-size: 1.6rem;
+                font-family: 'Noto Serif', serif;
+                background-color: transparent;
+                box-shadow: 0 0 1px 1px white;
+                color: white;
+                &:active{
+                    box-shadow: none;
+                }
+                &:focus{
+                    outline: none;
+                    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                    -webkit-backdrop-filter: blur(20px);
+                    backdrop-filter: blur(20px);
+                }
+            }
+            p{
+                font-size: 1.4rem;
+                margin: 2% 0 4% 0;
+                text-align: center;
+            }
+            button{
+                overflow: hidden;
+                padding: 1rem 2rem;
+                margin-bottom: 2rem;
+                align-self: center;
+                font-size: 2rem;
+                border: none;
+                border-radius: 0.6rem;
+                font-family: 'Noto Serif', serif;
+                color: white;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                border: 2px solid rgba(255, 255, 255, 0.18);
+                border-radius: 32px;
+                cursor: pointer;
+                transition: 0.6s;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 8px;
+                    height: 80px;
+                    background-color: white;
+                    left: -90px;
+                    top: -40%;
+                    transform: rotate(30deg);
+                    box-shadow: 0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #0fa,
+                    0 0 82px #0fa,
+                    0 0 92px #0fa,
+                    0 0 102px #0fa,
+                    0 0 151px #0fa;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                    &::after{
+                        left: 120%;
+                        transition: 1s;
+                    }
+                }
+            }
+            #idBtnIniciarSesion{
+                margin-top: 2rem;
+            }
+            h2{
+                text-align: center;
+                font-size: 2rem;
+                margin-top: 2rem;
+                a{
+                    color: white;
+                }
+            }
+            
+            .nombreApellido{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 48%;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

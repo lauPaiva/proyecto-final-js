@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-image: url(../img/fondo.svg);
+}
+.container{
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));  
+    -webkit-backdrop-filter: blur(20px);  
+    backdrop-filter: blur(20px);  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    .headerIndex{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            width: 8rem;
+            margin: 2rem 0 2rem 5rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 2px solid rgba(255, 255, 255, 0.18);
+            border-radius: 500px;
+            &:hover{
+                animation: bss 0.8s alternate 1 ease-out;
+                
+
+                @keyframes bss{
+                    14%{
+                        transform: translateX(15%);
+                    }
+                    28%{
+                        transform: translateX(-15%);
+                    }
+                    42%{
+                        transform: translateX(12%);
+                    }
+                    56%{
+                        transform: translateX(-12%);
+                    }
+                    70%{
+                        transform: translateX(6%);
+                    }
+                    84%{
+                        transform: translateX(-6%);
+                    }
+                    98%{
+                        transform: translateX(2%);
+                    }
+                    100%{
+                        transform: translateX(-2%);
+                    }
+
+                }
+
+                }
+            }
+            
+        }
+        .inicioRegistro{
+            display: flex;
+            align-items: center;
+            .btnIniciarSesion{
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+                padding: 1rem 2rem;
+                font-size: 2.5rem;
+                color: white;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                border: 2px solid rgba(255, 255, 255, 0.18);
+                border-radius: 32px;
+                margin-right: 2rem;
+                transition: 0.6s;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 8px;
+                    height: 80px;
+                    background-color: white;
+                    left: -100px;
+                    top: -40%;
+                    transform: rotate(30deg);
+                    box-shadow: 0 0 7px #fff,
+                                0 0 10px #fff,
+                                0 0 21px #fff,
+                                0 0 42px #0fa,
+                                0 0 82px #0fa,
+                                0 0 92px #0fa,
+                                0 0 102px #0fa,
+                                0 0 151px #0fa;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                    &::after{
+                        left: 130%;
+                        transition: 0.8s;
+                    }
+                }
+            }
+            .btnRegistrarse{
+                overflow: hidden;
+                text-decoration: none;
+                padding: 1rem 2rem;
+                font-size: 2.5rem;
+                color: white;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 32px;
+                margin: 0 5rem 0 2rem;
+                transition: 0.6s;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 8px;
+                    height: 80px;
+                    background-color: white;
+                    left: -90px;
+                    top: -40%;
+                    transform: rotate(30deg);
+                    box-shadow: 0 0 7px #fff,
+                                0 0 10px #fff,
+                                0 0 21px #fff,
+                                0 0 42px #0fa,
+                                0 0 82px #0fa,
+                                0 0 92px #0fa,
+                                0 0 102px #0fa,
+                                0 0 151px #0fa;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                    &::after{
+                        left: 120%;
+                        transition: 0.8s;
+                    }
+                }
+            }
+        }
+    
+    .mainIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .titulo{
+            font-size: 17rem;
+            margin:0 30rem 2rem 0rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));  
+            -webkit-text-stroke: 3px white;
+            -webkit-background-clip: text;
+            color: transparent; 
+            
+        }
+        .subtitulo{
+            font-size: 17rem;
+            margin: 0rem 0rem 0rem 30rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            -webkit-text-stroke: 3px white;
+            -webkit-background-clip: text;
+            color: transparent; 
+        }
+    }
+    .footerIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        .footerImg{
+            a{
+                img{
+                    padding:0.5rem;
+                    margin:0.5rem;
+                }
+            }
+            a:nth-child(1){
+                img:hover{
+                    background-color: #166FE5;
+                    border-radius: 100%;
+                    }
+            }
+            a:nth-child(2){
+                img:hover{
+                    background: #d6249f;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                    border-radius: 100%;
+                }
+            }
+            a:nth-child(3){
+                img:hover{
+                    background-color: #119AFB;
+                    border-radius: 100%;
+                }
+            }  
+        }
+    }
+}
+
+@import "utilities/registro.scss";

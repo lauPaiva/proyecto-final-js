@@ -1,0 +1,7 @@
+[
+    {"nombre": "Krombopulos", "apellido": "Michael", "nombreUsuario": "Krombopulos.Michael", "contraseña": "2D5nB1TM2mpy", "status": "empleado"}, 
+    {"nombre": "Abradolf", "apellido": "Lincler", "nombreUsuario": "Abradolf.Lincler", "contraseña": "7u9wPUJD9d6Q", "status": "empleado"},
+    {"nombre": "Frank", "apellido": "Palicky", "nombreUsuario": "Frank.Palicky", "contraseña": "OD0b4Id31Tst", "status": "empleado"},
+    {"nombre": "Morty", "apellido": "Smith", "nombreUsuario": "Morty.Smith", "contraseña": "swSZUy0l7v0m", "status": "empleado"},
+    {"nombre": "Rick", "apellido": "Sánchez", "nombreUsuario": "Rick.Sánchez", "contraseña": "dKK0K475r23M", "status": "empleado"}
+]
