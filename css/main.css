@@ -67,7 +67,7 @@ body {
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
       border: 2px solid rgba(255, 255, 255, 0.18);
       border-radius: 32px;
-      margin-right: 2rem;
+      margin: 0 5rem 0 2rem;
       transition: 0.6s; }
       .container .inicioRegistro .btnIniciarSesion::after {
         position: absolute;
@@ -97,7 +97,7 @@ body {
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
       border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 32px;
-      margin: 0 5rem 0 2rem;
+      margin-right: 2rem;
       transition: 0.6s; }
       .container .inicioRegistro .btnRegistrarse::after {
         position: absolute;
@@ -173,7 +173,7 @@ body {
     transform: translate(50%, -50%);
     transition: .35s; }
   .container .headerCompartido .volver:hover {
-    animation: rebote 0.8s alternate 1 ease-out; }
+    animation: rebote 0.9s alternate 1 ease-out; }
 
 @keyframes rebote {
   14% {
@@ -292,3 +292,25 @@ body {
       .container .mainCompartido .formCompartido .nombreApellido input {
         width: 48%;
         padding: 1rem; }
+
+.toastyEstilos {
+  font-size: 2.2rem;
+  color: white;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 32px; }
+
+.tituloAlertRegistro {
+  font-size: 3.5rem !important;
+  color: white !important;
+  letter-spacing: 0.25rem !important;
+  line-height: 7rem !important; }
+
+.popupAlertRegistro {
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+  border: 2px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 0.5rem !important; }

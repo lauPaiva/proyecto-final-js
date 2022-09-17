@@ -17,6 +17,12 @@
     <!-- mi CSS -->
     <link rel="stylesheet" href="../css/main.css">
 
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Sweet alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <title>Inicio de sesión</title>
 </head>
 <body>
@@ -35,7 +41,7 @@
                 <h1 id="idTituloIniciarSesion">Inicia sesión</h1>
             <input type="text" placeholder="Nombre de usuario" id="idUsuarioIniciarSesion">
             <input type="password" placeholder="Contraseña" id="idContraseñaIniciarSesion">
-            <button id="idBtnIniciarSesion">Iniciar sesión</button>
+            <button id="idBtnIniciarSesion" type="button">Iniciar sesión</button>
             <h2>
                 <a href="error.html">¿Has olvidado la contraseña?</a>
             </h2>
@@ -48,5 +54,9 @@
             
         </footer>
     </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/inicioSesion.js"></script>
 </body>
 </html>
