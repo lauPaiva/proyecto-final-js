@@ -60,7 +60,7 @@ const iniciarSesion = () => {
                 location.assign("../pages/paginaEmpleados.html");
             }else{
                 localStorage.setItem("Datos usuario", JSON.stringify(comparacionUsuarios));
-                location.assign("../pages/inicio.html");
+                location.assign("../pages/store.html");
             }
         }else{
             toasty('Contraseña incorrecta')
