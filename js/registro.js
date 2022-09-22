@@ -66,7 +66,7 @@ const registro = () => {
             existenciaDeUsuario = true;
         }
     })
-
+    
     validarEmail(emailIngresado);
     //Validación (asegurarse de que el usuario ingrese todos los datos requeridos), envío hacia pag. de inicio de sesión.
     if(nombreIngresado == '' || nombreIngresado == null){
