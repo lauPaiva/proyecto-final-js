@@ -553,3 +553,120 @@ body {
     cursor: pointer; }
   .containerStore .boton-eliminar:focus {
     outline: none; }
+
+.containerEmpleados {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.6rem; }
+  .containerEmpleados #usuario {
+    align-self: flex-end;
+    margin: 3rem 3rem 1rem 0; }
+  .containerEmpleados .estilo {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 3rem 2rem; }
+    .containerEmpleados .estilo h1 {
+      font-size: 5rem;
+      margin-bottom: 2rem; }
+    .containerEmpleados .estilo div div h5 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem; }
+    .containerEmpleados .estilo div div textarea {
+      width: 100%;
+      background-color: transparent;
+      color: white;
+      font-size: 1.6rem;
+      padding: 1rem;
+      border-radius: 1rem; }
+      .containerEmpleados .estilo div div textarea:focus {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.034), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        outline: none; }
+    .containerEmpleados .estilo div div #btnAgregar {
+      overflow: hidden;
+      cursor: pointer;
+      color: white;
+      font-size: 1.8rem;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0 4rem 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      border: 2px solid rgba(255, 255, 255, 0.18);
+      border-radius: 1rem;
+      transition: .5s; }
+      .containerEmpleados .estilo div div #btnAgregar::after {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 80px;
+        background-color: white;
+        left: -90px;
+        top: -40%;
+        transform: rotate(30deg);
+        box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; }
+      .containerEmpleados .estilo div div #btnAgregar:hover {
+        transform: scale(1.1);
+        transition: 0.5s; }
+        .containerEmpleados .estilo div div #btnAgregar:hover::after {
+          left: 120%;
+          transition: 1s; }
+    .containerEmpleados .estilo div div .btnBorrar {
+      cursor: pointer;
+      color: white;
+      font-size: 1.6rem;
+      padding: .8rem 1.3rem;
+      margin: 1rem 0;
+      background-color: #b25050;
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      border: 2px solid rgba(255, 255, 255, 0.18);
+      border-radius: 1rem;
+      transition: .5s; }
+      .containerEmpleados .estilo div div .btnBorrar:hover {
+        transform: scale(1.1);
+        transition: 0.5s; }
+    .containerEmpleados .estilo h2 {
+      font-size: 3rem;
+      padding: .5rem 0; }
+    .containerEmpleados .estilo #notas {
+      margin-top: 2rem;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      padding: 1rem 0; }
+      .containerEmpleados .estilo #notas .notaAgregada {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-top: 2px solid rgba(255, 255, 255, 0.18);
+        text-align: center;
+        margin: 2rem 0;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        word-break: break-all; }
+        .containerEmpleados .estilo #notas .notaAgregada h5 {
+          text-decoration: underline;
+          font-size: 3rem; }
+        .containerEmpleados .estilo #notas .notaAgregada p {
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          border: 2px solid rgba(255, 255, 255, 0.18);
+          max-width: 40%;
+          padding: 1.5rem 2rem;
+          font-size: 2rem; }
