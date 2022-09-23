@@ -5,7 +5,6 @@ fetch('../../empleados.json')
 .then(datosEmpleados => datosEmpleados.forEach(element => {
     arrayUsuariosCreados.push(element)
 }))
-console.log(arrayUsuariosCreados);
 //Class para darle a cada usuario traido del local las propiedades de "Usuarios"
 class Usuarios{
     constructor(nombre,apellido,email,nombreUsuario,contraseña, status){
